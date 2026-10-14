@@ -1,0 +1,2 @@
+import { Bell, Command, Search } from 'lucide-react'
+export function Topbar({ title, eyebrow }: { title: string; eyebrow?: string }) { return <header className="topbar"><div><div className="eyebrow">{eyebrow || 'PERSONAL KNOWLEDGE OS'}</div><h1>{title}</h1></div><div className="top-actions"><button className="icon-btn command" aria-label="Open command palette"><Search size={17} /><span>Search</span><kbd><Command size={11} /> K</kbd></button><button className="icon-btn" aria-label="Notifications"><Bell size={17} /></button></div></header> }
